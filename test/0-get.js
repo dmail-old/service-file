@@ -4,10 +4,7 @@ import fileService from '../index.js';
 
 var rest = Rest.create();
 rest.use(fileService);
-
-console.log('before', rest.baseURL.href);
 rest.baseURL+= 'files/';
-console.log('after', rest.baseURL.href);
 
 export function suite(add){
 
